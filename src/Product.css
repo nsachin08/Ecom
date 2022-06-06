@@ -1,0 +1,42 @@
+.Products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.product {
+  margin-top: 50px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: transform 200ms ease-in;
+}
+.product__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product__title {
+  padding: 1rem;
+}
+
+.product__price {
+  padding: 0 1rem;
+}
+
+.product__button {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
